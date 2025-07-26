@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyprus Fire Relief Fund</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; /* White background */
+            color: #1f2937; /* Dark gray text */
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="https://reviro.eu/" target="_blank" rel="noopener noreferrer">
+                <img src="https://i.ibb.co/C50JrrjS/Reviro-logo.png" alt="Reviro Logo" class="h-8 w-auto">
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#crisis" class="hover:text-green-600">The Crisis</a>
+                <a href="#impact" class="hover:text-green-600">Impact</a>
+                <a href="#donate-form" class="hover:text-green-600">Donate</a>
+            </nav>
+            <a href="#donate-form" class="cta-button bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-green-700">
+                Donate Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <!-- Text Content -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-4">
+                        Tragedy in Cyprus: A Devastating Wildfire Sweeps the Island
+                    </h2>
+                    <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto md:mx-0 mb-8">
+                        Dozens of homes are destroyed, and seven villages have been evacuated. With temperatures at 44°C, the situation is critical. Your help is needed right now.
+                    </p>
+                    <a href="#donate-form" class="cta-button bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-xl shadow-lg hover:bg-green-700 inline-block">
+                        SUPPORT THE VICTIMS
+                    </a>
+                </div>
+                <!-- Image -->
+                <div class="md:w-1/2">
+                    <img src="https://cdn1.neoskosmos.com/uploads/sites/2/2025/07/Turkeyfire_AAP-PRINT_63250-1024x576.jpg" alt="Wildfire in Cyprus" class="rounded-lg shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Crisis Section -->
+    <section id="crisis" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">A 100 sq km Inferno</h3>
+            <p class="text-green-600 font-semibold mb-12">Fueled by a Record Heatwave</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Stat Card -->
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <h4 class="text-2xl font-bold text-gray-800">7+ Villages</h4>
+                    <p class="text-gray-600">Evacuated from the path of the fire.</p>
+                </div>
+                <!-- Stat Card -->
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h4 class="text-2xl font-bold text-gray-800">44°C / 111°F</h4>
+                    <p class="text-gray-600">Extreme heat complicating firefighting efforts.</p>
+                </div>
+                <!-- Stat Card -->
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    <h4 class="text-2xl font-bold text-gray-800">Dozens of Homes</h4>
+                    <p class="text-gray-600">Destroyed, leaving families with nothing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">See The Devastation</h3>
+            <div class="video-container rounded-lg shadow-xl">
+                <iframe src="https://www.youtube.com/embed/5WBb_A4b2-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">How Your Donation Helps</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Impact Card -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center border border-gray-200">
+                    <h4 class="text-2xl font-bold text-green-700 mb-4">Emergency Relief</h4>
+                    <p class="text-gray-700">Your donation provides immediate support to displaced families: water, food, first aid, and sanitary supplies.</p>
+                </div>
+                <!-- Impact Card -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center border border-gray-200">
+                    <h4 class="text-2xl font-bold text-green-700 mb-4">Shelter & Stability</h4>
+                    <p class="text-gray-700">Fund temporary housing for those who lost everything, giving them a safe place to begin recovery.</p>
+                </div>
+                <!-- Impact Card -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center border border-gray-200">
+                    <h4 class="text-2xl font-bold text-green-700 mb-4">Long-Term Recovery</h4>
+                    <p class="text-gray-700">Contribute to a fund for rebuilding homes, supporting local farmers, and restoring the community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="pt-20 pb-8 md:py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">Make Your Contribution</h3>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                Your donation provides immediate relief to victims. The long-term part of our mission is the restoration of the forest and ecosystem, which will be our focus after the crisis.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:items-stretch max-w-6xl mx-auto">
+                <!-- Image Column -->
+                <div class="w-full">
+                    <img src="https://i.ibb.co/393X1zw2/2025-07-24-5-56-59-PM.png" alt="Aid for Cyprus victims" class="rounded-lg shadow-xl w-full h-full object-cover">
+                </div>
+                <!-- Donorbox Widget Column -->
+                <div id="donate-form" class="w-full flex justify-center md:justify-start">
+                     <iframe src="https://donorbox.org/embed/plant-trees-for-cyprus?" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important" allow="payment"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donor Wall Section -->
+    <section class="pt-12 pb-16 md:py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Wall of Support</h3>
+            <div class="flex justify-center">
+                <iframe src="https://donorbox.org/embed/plant-trees-for-cyprus?donor_wall_color=%232ecc71&only_donor_wall=true" style="width: 100%; max-width:400px; min-width:310px; height: 300px;" seamless="seamless" name="donorbox" frameborder="0" scrolling="no"> </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-green-100">
+        <div class="container mx-auto px-6 pt-16 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Column 1: About Reviro -->
+                <div>
+                    <img src="https://i.ibb.co/C50JrrjS/Reviro-logo.png" alt="Reviro Logo" class="h-10 mb-4">
+                    <p class="text-sm text-green-200 mb-2">a insauna ventures company</p>
+                    <p class="text-green-200">
+                        Helping businesses collect more authentic reviews while making a positive impact on our planet.
+                    </p>
+                </div>
+                <!-- Column 2: Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+                    <div class="flex items-start mb-4">
+                        <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <p class="text-green-200">Pavlou Valdaseridi 2A, Floor 1, Larnaca 6018, Cyprus</p>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <a href="mailto:support@reviro.co" class="text-green-200 hover:text-white">support@reviro.co</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-green-800 pt-8 text-center text-sm text-green-300">
+                <p>&copy; 2025 Cyprus Fire Relief Initiative. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
+</body>
+</html>
